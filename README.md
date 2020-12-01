@@ -22,6 +22,20 @@ This can be seen if we look at traffic stops (in green) compared to all other ca
 ## Dashboards
 There are two dashboards in the [Tableau workbook](https://public.tableau.com/views/MNPDCalls/KPIDashboard?:language=en&:display_count=y&:origin=viz_share_link), one giving a basic overview of the calls and the other highlighting three Key Performance Indicators.
 
-
+### Overview Dashboard
 
 The overview dashboard contains two charts, the forecast and the year over year change by week. The filter affects both charts.
+
+![](images/Overview.png)
+
+The forecast shows the number of calls each month from 2017 through October 2020 and shows the projection through the end of 2021. Changing the filter will change the line chart and the forecast. Hovering over the line shows the month and the number of calls.
+
+The forecast is a multiplicative model and takes into account seasonality. It is based on all calls from January 2013 through October 2020. The shaded area shows the 95% confidence interval. The RMSE of 3.688 and AIC of 1.578 are both lower than the additive model.
+
+The Year Over Year chart shows the percent change in number of calls for each week over last year. A negative percentage indicates fewer calls this year. Again, changing the filter will change the line chart. Hovering over the line shows the number of calls this year, the number of calls last year, and the percent difference.
+
+### KPI Dashboard
+
+The KPI Dashboard has three bar charts. The first one shows the units that were involved in 10-83, or shots fired, calls. The next one shows the most used tencodes in the last 30 days. Finally, the last chart shows the tencodes that had the largest changes over last year.
+
+![](images/KPI-Dashboard.png)
